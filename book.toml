@@ -1,0 +1,30 @@
+[book]
+title = "Mathematical expressions of fatty acids"
+authors = ["Giorgi Vladimirovich Kazakov", "Roman Alexandrovich Sidorov"]
+description = "Mathematical expressions of fatty acids"
+
+[preprocessor.katex]
+after = ["links"]
+before = ["gettext"]
+renderers = ["epub", "html", "pdf"]
+
+[preprocessor.gettext]
+after = ["links"]
+
+[build]
+extra-watch-dirs = ["po"]
+
+[output.html]
+additional-css = ["theme/css/language-picker.css"]
+git-repository-url = "https://github.com/ippras/mathematical_expressions_of_fatty_acids.book"
+hash-files = true
+
+[output.html.fold]
+enable = true
+level = 2
+
+# [output.markdown]
+
+# [output.epub]
+
+# [output.pdf]
